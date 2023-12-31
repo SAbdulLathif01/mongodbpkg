@@ -19,8 +19,8 @@ with open('README.md', 'r', encoding='utf-8') as f:
    
 
 __version__ = "0.0.6"
-REPO_NAME = "mongodb_connector"
-PKG_NAME= "MongoConnect"
+REPO_NAME = "mongodbpkg"
+PKG_NAME= "Mongo-Connect"
 AUTHOR_USER_NAME = "SAbdulLathifs01"
 AUTHOR_EMAIL = "lathif779@gmail.com"
 
@@ -38,6 +38,6 @@ setup(
     },
     package_dir={"": "src"},
     packages=find_packages(where="src"),
-    
+    install_requires=get_requiremet("./requirements_dev.txt"),
     
 )
